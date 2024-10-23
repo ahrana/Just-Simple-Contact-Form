@@ -1,0 +1,100 @@
+/* Contact Form Container */
+#cform {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #18bd9d; /* Change the Form Border */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Success Message */
+#cform p.success {
+    color: #28a745;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+#cform form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Field */
+#cform input[type="text"],
+#cform textarea,
+#cform input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#cform textarea {
+    resize: vertical;
+}
+
+/* Labels */
+#cform label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Submit Button */
+#cform input[type="submit"] {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#cform input[type="submit"]:hover {
+    background-color: #005177;
+}
+
+/* File Input */
+#cform input[type="file"] {
+    padding: 0;
+}
+
+/* Error Messages */
+#cform .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Additional Styles */
+.contact-form {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #cform {
+        padding: 15px;
+    }
+    
+    #cform input[type="text"],
+    #cform textarea {
+        font-size: 14px;
+    }
+
+    #cform input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
